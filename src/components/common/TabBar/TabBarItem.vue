@@ -8,7 +8,7 @@
     </div>
     <!-- <div :class="{active:isActive}">
       <slot name="item-text"></slot>
-    </div> -->
+    </div>-->
     <div :style="activeStyle">
       <slot name="item-text"></slot>
     </div>
@@ -20,24 +20,24 @@ export default {
   name: "TabBarItem",
   props: {
     path: String,
-    activeColor:{
-      type:String,
-      default:'red'
-    }
+    activeColor: {
+      type: String,
+      default: "red",
+    },
   },
   computed: {
     isActive() {
       return this.$route.path.indexOf(this.path) !== -1;
     },
     activeStyle() {
-      return this.isActive ? {color:this.activeColor} : {}
-    }
+      return this.isActive ? { color: this.activeColor } : {};
+    },
   },
   methods: {
     itemClick() {
       this.$router.push(this.path);
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -54,5 +54,4 @@ export default {
 /* .active {
   color: red;
 } */
-
 </style>

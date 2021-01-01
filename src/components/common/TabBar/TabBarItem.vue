@@ -1,7 +1,6 @@
 <template>
   <div class="tab-bar-item">
-      <img src="../../../assets/img/tabbar/home.svg" alt="" />
-      <div>首页</div>
+      <slot name="item-icon-acitve" ></slot>
       <slot name="item-icon" ></slot>
       <slot name="item-text"></slot>
   </div>

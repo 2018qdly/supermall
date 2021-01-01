@@ -1,36 +1,36 @@
 <template>
   <tab-bar>
     <tab-bar-item path="/home" active-color="red">
-      <img src="../../assets/img/tabbar/home.svg" alt="" slot="item-icon" />
+      <img src="@/assets/img/tabbar/home.svg" alt="" slot="item-icon" />
       <img
-        src="../../assets/img/tabbar/home_active.svg"
+        src="@/assets/img/tabbar/home_active.svg"
         alt=""
         slot="item-icon-active"
       />
       <div slot="item-text">首页</div>
     </tab-bar-item>
     <tab-bar-item path="/category" active-color="blue">
-      <img src="../../assets/img/tabbar/category.svg" alt="" slot="item-icon" />
+      <img src="@/assets/img/tabbar/category.svg" alt="" slot="item-icon" />
       <img
-        src="../../assets/img/tabbar/category_active.svg"
+        src="@/assets/img/tabbar/category_active.svg"
         alt=""
         slot="item-icon-active"
       />
       <div slot="item-text">分类</div>
     </tab-bar-item>
     <tab-bar-item path="/cart" active-color="blue">
-      <img src="../../assets/img/tabbar/shopcart.svg" alt="" slot="item-icon" />
+      <img src="@/assets/img/tabbar/shopcart.svg" alt="" slot="item-icon" />
       <img
-        src="../../assets/img/tabbar/shopcart_active.svg"
+        src="@/assets/img/tabbar/shopcart_active.svg"
         alt=""
         slot="item-icon-active"
       />
       <div slot="item-text">购物车</div>
     </tab-bar-item>
     <tab-bar-item path="/profile" active-color="yellow">
-      <img src="../../assets/img/tabbar/profile.svg" alt="" slot="item-icon" />
+      <img src="@/assets/img/tabbar/profile.svg" alt="" slot="item-icon" />
       <img
-        src="../../assets/img/tabbar/profile_active.svg"
+        src="@/assets/img/tabbar/profile_active.svg"
         alt=""
         slot="item-icon-active"
       />
@@ -40,8 +40,8 @@
 </template>
 
 <script>
-import TabBar from './TabBar/TabBar'
-import TabBarItem from './TabBar/TabBarItem'
+import TabBar from '@/components/common/TabBar/TabBar'
+import TabBarItem from '@/components/common/TabBar/TabBarItem'
 export default {
   components:{
     TabBarItem,

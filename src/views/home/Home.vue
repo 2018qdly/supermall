@@ -8,7 +8,6 @@
 
 <script>
 import NavBar from "components/common/navbar/NavBar";
-import { getHomeMultidata } from "network/home";
 export default {
   components: {
     NavBar,
@@ -20,10 +19,7 @@ export default {
     };
   },
   created() {
-    getHomeMultidata().then((res) => {
-      this.banners = res.data.banner.list;
-      this.recommends = res.data.recommend.list;
-    });
+    
   },
 };
 </script>
